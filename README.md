@@ -1,6 +1,6 @@
-# Distinction Application
+# Distinction Application - Album Master
 
-Contained in the repo are all files relevant to the CDDMA Distinction Application I will be creating 
+Using the iTunes Search API become a master at Music Album knowledge.
 
----
+Gather your personalised collection of favourite albums and quiz yourself on which tracks are from which album!
 
