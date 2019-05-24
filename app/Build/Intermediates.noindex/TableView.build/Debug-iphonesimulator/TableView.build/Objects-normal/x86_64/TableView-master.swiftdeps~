@@ -1,0 +1,20 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "3c7c2bf52d0c2897d57d91821ff7bba6"
+build_time: [1558715149, 959302000]
+inputs:
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/AlbumDetailsViewController.swift": [1558711599, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/DataParser.swift": [1558714319, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/CoreDataController.swift": [1558715149, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/TableViewController.swift": [1558714319, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/MenuViewController.swift": [1558713414, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/AppDelegate.swift": [1558522974, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/Model.swift": [1558713060, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/ChangeArtistViewController.swift": [1558715019, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/TableView/customCell.swift": [1558535849, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/Album+CoreDataClass.swift": [1558708687, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/Album+CoreDataProperties.swift": [1558708687, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/Artist+CoreDataClass.swift": [1558708687, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/Artist+CoreDataProperties.swift": [1558708687, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/Track+CoreDataClass.swift": [1558708687, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/Track+CoreDataProperties.swift": [1558708687, 0]
+  "/Users/jai/Desktop/OneDrive - Swinburne University/Programming/3.1/CDDMA/6/task-06p-JaiLaff/Task/Task7/Build/Intermediates.noindex/TableView.build/Debug-iphonesimulator/TableView.build/DerivedSources/CoreDataGenerated/AlbumData/AlbumData+CoreDataModel.swift": [1558708687, 0]

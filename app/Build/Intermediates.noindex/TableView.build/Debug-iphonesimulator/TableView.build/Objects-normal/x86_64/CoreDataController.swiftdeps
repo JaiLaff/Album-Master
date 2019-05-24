@@ -1,0 +1,533 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CoreDataController"
+provides-nominal:
+- "9TableView18CoreDataControllerC"
+provides-member:
+- ["9TableView18CoreDataControllerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "<"
+- !private ">"
+- "Album"
+- !private "Array"
+- "Artist"
+- "AssignmentPrecedence"
+- "CoreDataController"
+- !private "FloatLiteralType"
+- "Int"
+- !private "Int16"
+- !private "IntegerLiteralType"
+- !private "NSBatchDeleteRequest"
+- "NSEntityDescription"
+- !private "NSFetchRequest"
+- !private "NSFetchRequestResult"
+- "NSManagedObjectContext"
+- !private "NSPredicate"
+- "String"
+- !private "StringLiteralType"
+- "Track"
+- !private "currentArtist"
+- "memAlbum"
+- "memArtist"
+- !private "memArtists"
+- "memTrack"
+- !private "print"
+depends-member:
+- !private ["9TableView5AlbumC", "addToTracks"]
+- ["9TableView5AlbumC", "deinit"]
+- !private ["9TableView5AlbumC", "imageUrl"]
+- !private ["9TableView5AlbumC", "init"]
+- !private ["9TableView5AlbumC", "itunesId"]
+- !private ["9TableView5AlbumC", "title"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "removeAll"]
+- !private ["Sa", "sort"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "removeAll"]
+- !private ["s13ArrayProtocolP", "sort"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["9TableView6ArtistC", "addToAlbum"]
+- ["9TableView6ArtistC", "deinit"]
+- !private ["9TableView6ArtistC", "init"]
+- !private ["9TableView6ArtistC", "itunesId"]
+- !private ["9TableView6ArtistC", "name"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "removeAll"]
+- !private ["SK", "sort"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "addToAlbum"]
+- !private ["s7CVarArgP", "addToTracks"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "entity"]
+- !private ["s7CVarArgP", "execute"]
+- !private ["s7CVarArgP", "fetch"]
+- !private ["s7CVarArgP", "imageUrl"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "itunesId"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "predicate"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "sort"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "trackNo"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "removeAll"]
+- !private ["Sl", "sort"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- ["9TableView18CoreDataControllerC", "Album"]
+- ["9TableView18CoreDataControllerC", "Artist"]
+- ["9TableView18CoreDataControllerC", "Int"]
+- !private ["9TableView18CoreDataControllerC", "Int16"]
+- !private ["9TableView18CoreDataControllerC", "NSBatchDeleteRequest"]
+- ["9TableView18CoreDataControllerC", "NSEntityDescription"]
+- !private ["9TableView18CoreDataControllerC", "NSFetchRequest"]
+- !private ["9TableView18CoreDataControllerC", "NSFetchRequestResult"]
+- ["9TableView18CoreDataControllerC", "NSManagedObjectContext"]
+- !private ["9TableView18CoreDataControllerC", "NSPredicate"]
+- ["9TableView18CoreDataControllerC", "String"]
+- ["9TableView18CoreDataControllerC", "Track"]
+- ["9TableView18CoreDataControllerC", "albumEntity"]
+- ["9TableView18CoreDataControllerC", "context"]
+- ["9TableView18CoreDataControllerC", "convertCoreAlbumToMemAlbum"]
+- ["9TableView18CoreDataControllerC", "convertCoreArtistToMemArtist"]
+- ["9TableView18CoreDataControllerC", "convertCoreTrackToMemTrack"]
+- !private ["9TableView18CoreDataControllerC", "currentArtist"]
+- ["9TableView18CoreDataControllerC", "deleteAll"]
+- ["9TableView18CoreDataControllerC", "findAlbum"]
+- ["9TableView18CoreDataControllerC", "findArtist"]
+- ["9TableView18CoreDataControllerC", "getAlbumsByArtist"]
+- ["9TableView18CoreDataControllerC", "getArtistCount"]
+- ["9TableView18CoreDataControllerC", "getArtists"]
+- ["9TableView18CoreDataControllerC", "getTracks"]
+- ["9TableView18CoreDataControllerC", "init"]
+- ["9TableView18CoreDataControllerC", "memAlbum"]
+- ["9TableView18CoreDataControllerC", "memArtist"]
+- !private ["9TableView18CoreDataControllerC", "memArtists"]
+- ["9TableView18CoreDataControllerC", "memTrack"]
+- !private ["9TableView18CoreDataControllerC", "print"]
+- ["9TableView18CoreDataControllerC", "readAlbum"]
+- ["9TableView18CoreDataControllerC", "trackEntity"]
+- ["9TableView18CoreDataControllerC", "writeAlbum"]
+- ["9TableView18CoreDataControllerC", "writeTrack"]
+- !private ["s28CustomDebugStringConvertibleP", "addToAlbum"]
+- !private ["s28CustomDebugStringConvertibleP", "addToTracks"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "entity"]
+- !private ["s28CustomDebugStringConvertibleP", "execute"]
+- !private ["s28CustomDebugStringConvertibleP", "fetch"]
+- !private ["s28CustomDebugStringConvertibleP", "imageUrl"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "itunesId"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "predicate"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "sort"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "trackNo"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "sort"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addToAlbum"]
+- !private ["s23CustomStringConvertibleP", "addToTracks"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "entity"]
+- !private ["s23CustomStringConvertibleP", "execute"]
+- !private ["s23CustomStringConvertibleP", "fetch"]
+- !private ["s23CustomStringConvertibleP", "imageUrl"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "itunesId"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "predicate"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "sort"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "trackNo"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "removeAll"]
+- !private ["Se", "sort"]
+- !private ["Se", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "removeAll"]
+- !private ["SE", "sort"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addToAlbum"]
+- !private ["SQ", "addToTracks"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
+- !private ["SQ", "entity"]
+- !private ["SQ", "execute"]
+- !private ["SQ", "fetch"]
+- !private ["SQ", "imageUrl"]
+- !private ["SQ", "imgUrl"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "itunesID"]
+- !private ["SQ", "itunesId"]
+- !private ["SQ", "name"]
+- !private ["SQ", "predicate"]
+- !private ["SQ", "removeAll"]
+- !private ["SQ", "save"]
+- !private ["SQ", "sort"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "title"]
+- !private ["SQ", "trackNo"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s25ExpressibleByArrayLiteralP", "sort"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addToAlbum"]
+- !private ["SH", "addToTracks"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- !private ["SH", "entity"]
+- !private ["SH", "execute"]
+- !private ["SH", "fetch"]
+- !private ["SH", "imageUrl"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "itunesId"]
+- !private ["SH", "name"]
+- !private ["SH", "predicate"]
+- !private ["SH", "removeAll"]
+- !private ["SH", "save"]
+- !private ["SH", "sort"]
+- !private ["SH", "subscript"]
+- !private ["SH", "title"]
+- !private ["SH", "trackNo"]
+- !private ["Si", "init"]
+- !private ["s5Int16V", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "removeAll"]
+- !private ["SM", "sort"]
+- !private ["SM", "subscript"]
+- !private ["So20NSBatchDeleteRequestC", "init"]
+- !private ["So8NSCodingP", "count"]
+- !private ["So8NSCodingP", "entity"]
+- !private ["So8NSCodingP", "execute"]
+- !private ["So8NSCodingP", "fetch"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "predicate"]
+- !private ["So8NSCodingP", "save"]
+- !private ["So9NSCopyingP", "entity"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "predicate"]
+- !private ["So19NSEntityDescriptionC", "entity"]
+- !private ["So17NSFastEnumerationP", "entity"]
+- !private ["So14NSFetchRequestC", "init"]
+- !private ["So14NSFetchRequestC", "predicate"]
+- !private ["So20NSFetchRequestResultP", "addToAlbum"]
+- !private ["So20NSFetchRequestResultP", "addToTracks"]
+- !private ["So20NSFetchRequestResultP", "imageUrl"]
+- !private ["So20NSFetchRequestResultP", "init"]
+- !private ["So20NSFetchRequestResultP", "itunesId"]
+- !private ["So20NSFetchRequestResultP", "name"]
+- !private ["So20NSFetchRequestResultP", "title"]
+- !private ["So20NSFetchRequestResultP", "trackNo"]
+- !private ["So9NSLockingP", "count"]
+- !private ["So9NSLockingP", "execute"]
+- !private ["So9NSLockingP", "fetch"]
+- !private ["So9NSLockingP", "save"]
+- !private ["So15NSManagedObjectC", "addToAlbum"]
+- !private ["So15NSManagedObjectC", "addToTracks"]
+- !private ["So15NSManagedObjectC", "imageUrl"]
+- !private ["So15NSManagedObjectC", "init"]
+- !private ["So15NSManagedObjectC", "itunesId"]
+- !private ["So15NSManagedObjectC", "name"]
+- !private ["So15NSManagedObjectC", "title"]
+- !private ["So15NSManagedObjectC", "trackNo"]
+- !private ["So22NSManagedObjectContextC", "count"]
+- !private ["So22NSManagedObjectContextC", "execute"]
+- !private ["So22NSManagedObjectContextC", "fetch"]
+- !private ["So22NSManagedObjectContextC", "save"]
+- !private ["So8NSObjectC", "addToAlbum"]
+- !private ["So8NSObjectC", "addToTracks"]
+- !private ["So8NSObjectC", "count"]
+- !private ["So8NSObjectC", "entity"]
+- !private ["So8NSObjectC", "execute"]
+- !private ["So8NSObjectC", "fetch"]
+- !private ["So8NSObjectC", "imageUrl"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "itunesId"]
+- !private ["So8NSObjectC", "name"]
+- !private ["So8NSObjectC", "predicate"]
+- !private ["So8NSObjectC", "save"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "trackNo"]
+- !private ["So8NSObjectP", "addToAlbum"]
+- !private ["So8NSObjectP", "addToTracks"]
+- !private ["So8NSObjectP", "count"]
+- !private ["So8NSObjectP", "entity"]
+- !private ["So8NSObjectP", "execute"]
+- !private ["So8NSObjectP", "fetch"]
+- !private ["So8NSObjectP", "imageUrl"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "itunesId"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "predicate"]
+- !private ["So8NSObjectP", "save"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "trackNo"]
+- !private ["So24NSPersistentStoreRequestC", "init"]
+- !private ["So24NSPersistentStoreRequestC", "predicate"]
+- !private ["So11NSPredicateC", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["Sj", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "removeAll"]
+- !private ["Sk", "sort"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "removeAll"]
+- !private ["Sm", "sort"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "removeAll"]
+- !private ["ST", "sort"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["9TableView5TrackC", "deinit"]
+- !private ["9TableView5TrackC", "init"]
+- !private ["9TableView5TrackC", "title"]
+- !private ["9TableView5TrackC", "trackNo"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "sort"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sort"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addToAlbum"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addToTracks"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "entity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "execute"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fetch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageUrl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itunesId"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "predicate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trackNo"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "sort"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["9TableView8memAlbumC", "imgUrl"]
+- !private ["9TableView8memAlbumC", "init"]
+- !private ["9TableView8memAlbumC", "itunesID"]
+- !private ["9TableView8memAlbumC", "title"]
+- !private ["9TableView9memArtistC", "id"]
+- !private ["9TableView9memArtistC", "init"]
+- !private ["9TableView9memArtistC", "name"]
+- !private ["9TableView8memTrackC", "init"]
+- !private ["9TableView8memTrackC", "title"]
+- !private ["9TableView8memTrackC", "trackNo"]
+depends-nominal:
+- "9TableView5AlbumC"
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- "9TableView6ArtistC"
+- !private "SK"
+- !private "Sz"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "9TableView18CoreDataControllerC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "Si"
+- !private "s5Int16V"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "So20NSBatchDeleteRequestC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So19NSEntityDescriptionC"
+- !private "So17NSFastEnumerationP"
+- !private "So14NSFetchRequestC"
+- !private "So20NSFetchRequestResultP"
+- !private "So9NSLockingP"
+- !private "So15NSManagedObjectC"
+- !private "So22NSManagedObjectContextC"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So24NSPersistentStoreRequestC"
+- !private "So11NSPredicateC"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "9TableView5TrackC"
+- !private "s18_BitwiseOperationsP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+- !private "9TableView8memAlbumC"
+- !private "9TableView9memArtistC"
+- !private "9TableView8memTrackC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1cbfae5d2cee7544dfe81574a82176a2"
