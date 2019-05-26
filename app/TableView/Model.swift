@@ -56,7 +56,13 @@ class memArtist {
     }
 }
 
-var currentArtist: memArtist = memArtist(name: "Kanye West", id: "2715720", albums: [])
+struct Question {
+    var trackName: String?
+    var options: [String?]
+    var correctAlbum: String?
+}
+
+var currentArtist: memArtist = memArtist(name: "No Current Artist", id: "", albums: [])
 
 var memArtists:[memArtist] = []
 

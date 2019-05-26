@@ -214,6 +214,7 @@ SWIFT_CLASS_NAMED("Album")
 @class UIImageView;
 @class UITextView;
 @class UIButton;
+@class UIActivityIndicatorView;
 @class NSBundle;
 @class NSCoder;
 
@@ -222,6 +223,7 @@ SWIFT_CLASS("_TtC9TableView26AlbumDetailsViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified saveButton;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified spinner;
 - (void)viewDidLoad;
 - (IBAction)viewOnWikiPressed:(id _Nonnull)sender;
 - (IBAction)SaveDataPressed:(id _Nonnull)sender;
@@ -267,7 +269,6 @@ SWIFT_CLASS_NAMED("Artist")
 
 @class UITextField;
 @class UILabel;
-@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC9TableView26ChangeArtistViewController")
 @interface ChangeArtistViewController : UIViewController
@@ -292,6 +293,28 @@ SWIFT_CLASS("_TtC9TableView18MenuViewController")
 - (IBAction)quizPressed:(id _Nonnull)sender;
 - (IBAction)changeArtistPressed:(id _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9TableView18QuizViewController")
+@interface QuizViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblTrackName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblQuestion;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblStreak;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblLoading;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblIsCorrect;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bt1;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bt2;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bt3;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bt4;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified spinner;
+- (void)viewDidLoad;
+- (IBAction)button1Pressed:(id _Nonnull)sender;
+- (IBAction)button2Pressed:(id _Nonnull)sender;
+- (IBAction)button3Pressed:(id _Nonnull)sender;
+- (IBAction)button4Pressed:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

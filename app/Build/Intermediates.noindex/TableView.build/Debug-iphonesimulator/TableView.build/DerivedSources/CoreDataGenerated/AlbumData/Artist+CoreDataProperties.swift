@@ -2,7 +2,7 @@
 //  Artist+CoreDataProperties.swift
 //  
 //
-//  Created by Jai Lafferty on 25/5/19.
+//  Created by Jai Lafferty on 26/5/19.
 //
 //  This file was automatically generated and should not be edited.
 //

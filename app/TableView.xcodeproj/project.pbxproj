@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		29093C2C2294358E0048E366 /* AlbumData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29093C2A2294358E0048E366 /* AlbumData.xcdatamodeld */; };
 		2966D55022891076002C47C2 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D54F22891076002C47C2 /* DataParser.swift */; };
+		299C1D3C22991A310009AC2B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299C1D3B22991A310009AC2B /* QuizViewController.swift */; };
 		29BBB0852254C8E600DD4600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBB0842254C8E600DD4600 /* AppDelegate.swift */; };
 		29BBB0872254C8E600DD4600 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBB0862254C8E600DD4600 /* AlbumDetailsViewController.swift */; };
 		29BBB08A2254C8E600DD4600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BBB0882254C8E600DD4600 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		29093C2B2294358E0048E366 /* AlbumData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlbumData.xcdatamodel; sourceTree = "<group>"; };
 		2966D54F22891076002C47C2 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		299C1D3B22991A310009AC2B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		29BBB0812254C8E600DD4600 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29BBB0842254C8E600DD4600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29BBB0862254C8E600DD4600 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				29D7DE632297CF6F00910344 /* ChangeArtistViewController.swift */,
 				29D868602295697E007E815E /* CoreDataController.swift */,
 				29D8685E22955BF5007E815E /* MenuViewController.swift */,
+				299C1D3B22991A310009AC2B /* QuizViewController.swift */,
 				29BBB08B2254C8E700DD4600 /* Assets.xcassets */,
 				29BBB09A2254E8DB00DD4600 /* Media.xcassets */,
 				29BBB08D2254C8E700DD4600 /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 				29D8685F22955BF5007E815E /* MenuViewController.swift in Sources */,
 				29093C2C2294358E0048E366 /* AlbumData.xcdatamodeld in Sources */,
 				29BBB0852254C8E600DD4600 /* AppDelegate.swift in Sources */,
+				299C1D3C22991A310009AC2B /* QuizViewController.swift in Sources */,
 				29BBB0992254D42C00DD4600 /* Model.swift in Sources */,
 				29D7DE642297CF6F00910344 /* ChangeArtistViewController.swift in Sources */,
 				29D8686B22959596007E815E /* customCell.swift in Sources */,
@@ -325,7 +329,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Jai.Lafferty.TableView;
+				PRODUCT_BUNDLE_IDENTIFIER = Jai.Lafferty.AlbumMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Jai.Lafferty.TableView;
+				PRODUCT_BUNDLE_IDENTIFIER = Jai.Lafferty.AlbumMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

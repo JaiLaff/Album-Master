@@ -22,19 +22,45 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (useSavedData != true){
-            parser = DataParser()
-            parser?.begin(tv: tableView)
-            deleteButton.isHidden = true
-        } else {
+        if (useSavedData == true){
+            
             coreController = CoreDataController(context: appDelegate.persistentContainer.viewContext)
             memArtists = coreController?.getArtists() ?? []
+            
+            checkAlbumCount()
+            
+        } else {
+            parser = DataParser()
+            deleteButton.isHidden = true
+            parser?.begin(callback: checkAlbumCount)
+        }
+    }
+    
+    func checkAlbumCount() {
+        print("Checking Album Count")
+        if (useSavedData == true) {
+            let count = coreController?.getTotalAlbumCount()
+            if ( count == 0) {
+                displayNoAlbumAlert(savedData: true)
+                print("No Albums count in Core Data")
+            } else {
+                print ("There are \(String(describing: count)) albums in Core Data")
+            }
+            
+        } else {
+            let count = currentArtist.albums.count
+            if ( count == 0) {
+                displayNoAlbumAlert(savedData: false)
+                print("No Albums found in memory")
+            } else {
+                print("There are \(String(describing: count)) albums in memory")
+            }
+            
         }
         
-        tableView.reloadData()
-        
-        // Make Error Alert
-        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 
     // MARK: - Table view data source
@@ -66,26 +92,36 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        
+        
         let cell = tableView.cellForRow(at: indexPath) as! customCell
         
         cell.spinner.isHidden = false
         cell.spinner.startAnimating()
         
-        DispatchQueue.main.async {
-            if (memArtists[indexPath.section].albums[indexPath.row].tracks.isEmpty) {
-                //Need to load Data
-                if (self.useSavedData  == true){
-                    memArtists[indexPath.section].albums[indexPath.row].tracks = (self.coreController?.getTracks(collId: memArtists[indexPath.section].albums[indexPath.row].itunesID))!
-                } else {
-                    self.parser?.fetchTracks(collID: memArtists[indexPath.section].albums[indexPath.row].itunesID)
-                }
+        func seguePrep() { // Needs access to variables within scope
+            DispatchQueue.main.async {
+                self.currData = memArtists[indexPath.section].albums[indexPath.row]
+                cell.spinner.stopAnimating()
+                cell.spinner.isHidden = true
+                self.performSegue(withIdentifier: "DetailsSegue", sender: nil)
             }
-            self.currData = memArtists[indexPath.section].albums[indexPath.row]
-            cell.spinner.stopAnimating()
-            cell.spinner.isHidden = true
-            self.performSegue(withIdentifier: "DetailsSegue", sender: nil)
+        }
+        
+        
+        if (memArtists[indexPath.section].albums[indexPath.row].tracks.isEmpty) {
+            //Need to load Data
+            if (self.useSavedData  == true){
+                memArtists[indexPath.section].albums[indexPath.row].tracks = (self.coreController?.getTracks(collId: memArtists[indexPath.section].albums[indexPath.row].itunesID))!
+                print("Loaded Core Data Tracks into Memory")
+                seguePrep()
+            } else {
+                self.parser?.fetchTracks(collID: memArtists[indexPath.section].albums[indexPath.row].itunesID, callback: seguePrep)
+            }
         }
     }
+    
+    
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let count = memArtists.count
@@ -121,5 +157,21 @@ class TableViewController: UITableViewController {
         
         self.present(alert, animated: true)
         
+    }
+    
+    func displayNoAlbumAlert(savedData: Bool) {
+        var alert: UIAlertController
+        
+        if savedData{
+            alert = UIAlertController(title: "No Albums Found", message: "Go and save some albums!", preferredStyle: .alert)
+        } else {
+            alert = UIAlertController(title: "No Albums Found", message: "Select an Artist!", preferredStyle: .alert)
+        }
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+            self.navigationController?.popViewController(animated: true)
+        }))
+
+        self.present(alert, animated: true)
     }
 }

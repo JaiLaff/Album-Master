@@ -98,6 +98,13 @@ class CoreDataController {
         let album = findAlbum(collId: album.itunesID)
         
         album?.addToTracks(newTrack)
+        do {
+            try context.save()
+            print("\(newTrack.title!) added to \(album!.title!)")
+
+        }catch {
+            print("Failed to save Track to Core Data - \(error)")
+        }
     }
     
     func getTracks(collId: String) -> [memTrack] {
@@ -195,7 +202,6 @@ class CoreDataController {
             try context.execute(deleteTracks)
             try context.execute(deleteAlbums)
             try context.execute(deleteArtists)
-            try context.save()
             memArtists.removeAll()
             memArtists.append(currentArtist)
         } catch {
@@ -209,6 +215,61 @@ class CoreDataController {
         let count = try! context.count(for: fetchRequest)
         
         return count
+    }
+    
+    func getAlbumCount(artist: memArtist) -> Int {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Album")
+        fetchRequest.predicate = NSPredicate(format: "artist.itunesId == %@", currentArtist.id)
+        let count = try! context.count(for: fetchRequest)
+        
+        return count
+    }
+    
+    func getTotalAlbumCount() -> Int {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Album")
+        let count = try! context.count(for: fetchRequest)
+        
+        return count
+    }
+    
+    func getRandomTrack() -> (track: String, album: String) {
+        var result:(track: String, album: String) = ("","")
+        
+        let request = NSFetchRequest<Track>(entityName: "Track")
+        
+        do {
+            let fetchRequest = try context.fetch(request)
+            
+            let randomTrack = fetchRequest.randomElement()
+            let randomAlbum = randomTrack?.album
+            
+            result.track = randomTrack?.title ?? ""
+            result.album = randomAlbum?.title ?? ""
+            
+        } catch {
+            print("Error getting Tracks")
+        }
+        
+        return result
+    }
+    
+    func getRandomAlbum() -> String {
+        var result: String = ""
+        
+        let request = NSFetchRequest<Album>(entityName: "Album")
+        
+        do {
+            let fetchRequest = try context.fetch(request)
+            
+            let randomAlbum = fetchRequest.randomElement()
+            
+            result =  randomAlbum?.title ?? ""
+            
+        } catch {
+            print("Error getting Tracks")
+        }
+        
+        return result
     }
     
     func convertCoreArtistToMemArtist(artist: Artist) -> memArtist {

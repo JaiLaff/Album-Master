@@ -19,6 +19,8 @@ class AlbumDetailsViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +59,8 @@ class AlbumDetailsViewController: UIViewController {
         return result!
     }
     
-    func fetchWikiUrl(){
+    func fetchWikiUrl(completion: @escaping (String?) -> Void){
+        spinner.startAnimating()
         var result: String?
         var dataTask: URLSessionDataTask?
         
@@ -77,11 +80,7 @@ class AlbumDetailsViewController: UIViewController {
                     // If we have a 200 status (OK) then continue
                     print("response")
                     result = self.parseBestUrl(data: data)
-                    print(result!)
-                    DispatchQueue.main.async {
-                        UIApplication.shared.open(NSURL(string:result ?? "")! as URL)
-
-                    }
+                    completion(result)
                 }
             }
         }
@@ -128,8 +127,15 @@ class AlbumDetailsViewController: UIViewController {
         }
     }
     
+    func openWiki(stringUrl: String?) {
+        DispatchQueue.main.async {
+            self.spinner.stopAnimating()
+            UIApplication.shared.open(NSURL(string:stringUrl ?? "")! as URL)
+        }
+    }
+    
     @IBAction func viewOnWikiPressed(_ sender: Any) {
-        fetchWikiUrl()
+        fetchWikiUrl(completion: openWiki)
     }
     
     
@@ -137,6 +143,7 @@ class AlbumDetailsViewController: UIViewController {
         
         let coreController = CoreDataController(context: appDelegate.persistentContainer.viewContext)
         coreController.writeAlbum(album:album!)
+        
         
         for t in (album?.tracks)! {
             coreController.writeTrack(album: album!, track: t)

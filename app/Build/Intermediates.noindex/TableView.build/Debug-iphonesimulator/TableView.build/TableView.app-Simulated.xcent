@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>2X58AC56PK.Jai.Lafferty.TableView</string>
+	<string>2X58AC56PK.Jai.Lafferty.AlbumMaster</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>2X58AC56PK.Jai.Lafferty.TableView</string>
+		<string>2X58AC56PK.Jai.Lafferty.AlbumMaster</string>
 	</array>
 </dict>
 </plist>

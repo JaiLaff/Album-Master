@@ -30,10 +30,7 @@ class ChangeArtistViewController: UIViewController {
     @IBAction func searchPressed(_ sender: Any) {
         spinner.isHidden = false
         spinner.startAnimating()
-        
-        var result: (name: String?, id: String?)
-        
-        // COMPLETION HANDLER HERE
+                
         
         let completeQuery: ((name: String?, id: String?)) -> Void = { result in
             DispatchQueue.main.async {
@@ -48,12 +45,7 @@ class ChangeArtistViewController: UIViewController {
             
         }
         
-        func retrieveArtistDetails() {
-            // Replicate Downloading/Uploading
-            dataParser.findArtist(searchTerm: tfArtistName.text ?? "", callback: completeQuery)
-        }
-        
-        retrieveArtistDetails()
+        dataParser.findArtist(searchTerm: tfArtistName.text ?? "", callback: completeQuery)
     }
     
     @IBAction func changePressed(_ sender: Any) {

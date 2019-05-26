@@ -16,12 +16,12 @@ class DataParser {
         session = URLSession(configuration: .default)
     }
     
-    func begin(tv: UITableView) {
-        fetchAlbumData(tv: tv)
+    func begin(callback: @escaping () -> Void) {
+        fetchAlbumData(callback: callback)
     }
     
     // Gets data from the API
-    func fetchAlbumData(tv: UITableView) {
+    func fetchAlbumData(callback: @escaping () -> Void) {
         var dataTask: URLSessionDataTask?
         
         dataTask?.cancel()
@@ -38,7 +38,8 @@ class DataParser {
                     print("error: " + error.localizedDescription)
                 } else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 {
                     // If we have a 200 status (OK) then continue
-                    self.parseAlbumData(data: data, tv: tv)
+                    self.parseAlbumData(data: data)
+                    callback()
                 }
             })
         }
@@ -46,7 +47,7 @@ class DataParser {
     }
     
     
-    func parseAlbumData(data: Data, tv: UITableView) {
+    func parseAlbumData(data: Data) {
         var response:[String: Any]
         
         do {
@@ -54,6 +55,10 @@ class DataParser {
             
             // Make sure we actually have results
             guard let array = response["results"] as? [Any] else {
+                return
+            }
+            
+            guard response["resultCount"] as? Int ?? 0 > 0 else {
                 return
             }
             
@@ -71,16 +76,13 @@ class DataParser {
                     print("Error placing Album Data into Structs - If only one of these appears that's fine!")
                 }
             }
-            DispatchQueue.main.async{
-                tv.reloadData()
-            }
         } catch {
             print("Error Parsing Album Data")
             return
         }
     }
     
-    func fetchTracks(collID : String) {
+    func fetchTracks(collID : String, callback: @escaping () -> Void) {
         var dataTask: URLSessionDataTask?
         
         dataTask?.cancel()
@@ -98,6 +100,7 @@ class DataParser {
                 } else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 {
                     // If we have a 200 status (OK) then continue
                     self.parseTracks(collID: collID, data: data)
+                    callback()
                 }
             })
         }

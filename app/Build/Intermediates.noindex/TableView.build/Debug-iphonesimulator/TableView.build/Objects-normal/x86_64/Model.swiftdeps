@@ -3,6 +3,7 @@ provides-top-level:
 - "memAlbum"
 - "memTrack"
 - "memArtist"
+- "Question"
 - "currentArtist"
 - "memArtists"
 - "=="
@@ -10,10 +11,12 @@ provides-nominal:
 - "9TableView8memAlbumC"
 - "9TableView8memTrackC"
 - "9TableView9memArtistC"
+- "9TableView8QuestionV"
 provides-member:
 - ["9TableView8memAlbumC", ""]
 - ["9TableView8memTrackC", ""]
 - ["9TableView9memArtistC", ""]
+- ["9TableView8QuestionV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
@@ -22,6 +25,7 @@ depends-top-level:
 - "Bool"
 - "Equatable"
 - "Int"
+- "Question"
 - "String"
 - "StringLiteralType"
 - "currentArtist"
@@ -69,6 +73,11 @@ depends-member:
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
+- ["9TableView8QuestionV", "String"]
+- ["9TableView8QuestionV", "correctAlbum"]
+- ["9TableView8QuestionV", "init"]
+- ["9TableView8QuestionV", "options"]
+- ["9TableView8QuestionV", "trackName"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - ["ST", "init"]
@@ -135,6 +144,7 @@ depends-nominal:
 - "SH"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- "9TableView8QuestionV"
 - "Sm"
 - "ST"
 - "SS"
@@ -179,4 +189,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "058b1ca1149e8e34bafd3b0f8a250900"
+interface-hash: "15b6f4920a1691c8e3d883b025541e98"
