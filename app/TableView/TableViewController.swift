@@ -10,7 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var currData: memAlbum? = nil
+    var currAlbum: memAlbum? = nil
+    var currArtist: memArtist? = nil
     var parser:DataParser? = nil
     var coreController: CoreDataController? = nil
     var useSavedData: Bool?
@@ -70,7 +71,18 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (useSavedData == true ? memArtists[section].albums.count : currentArtist.albums.count)
+        let count = useSavedData == true ? memArtists[section].albums.count : currentArtist.albums.count
+        if count < 1 {
+//            let alert = UIAlertController(title: "No Albums Found", message: "Check your internet connection", preferredStyle: .alert)
+//            
+//            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+//                self.navigationController?.popViewController(animated: true)
+//            }))
+//            
+//            self.present(alert, animated: true)
+        }
+        
+        return count
     }
 
     
@@ -101,7 +113,8 @@ class TableViewController: UITableViewController {
         
         func seguePrep() { // Needs access to variables within scope
             DispatchQueue.main.async {
-                self.currData = memArtists[indexPath.section].albums[indexPath.row]
+                self.currAlbum = memArtists[indexPath.section].albums[indexPath.row]
+                self.currArtist = memArtists[indexPath.section]
                 cell.spinner.stopAnimating()
                 cell.spinner.isHidden = true
                 self.performSegue(withIdentifier: "DetailsSegue", sender: nil)
@@ -135,7 +148,8 @@ class TableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailVC = segue.destination as? AlbumDetailsViewController {
-            detailVC.album = currData
+            detailVC.album = currAlbum
+            detailVC.artist = currArtist
             detailVC.usingCoreData = useSavedData
         }
     }
@@ -147,7 +161,8 @@ class TableViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
             self.coreController?.deleteAll()
             self.deleteButton.isEnabled = false
-            self.currData = nil
+            self.currAlbum = nil
+            self.currArtist = nil
             memArtists.removeAll()
             self.tableView.reloadData()
             memArtists.append(currentArtist)

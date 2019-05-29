@@ -12,6 +12,7 @@ import CoreData
 class AlbumDetailsViewController: UIViewController {
 
     var album: memAlbum? = nil
+    var artist: memArtist? = nil
     let session:URLSession = URLSession(configuration: .default)
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var usingCoreData:Bool? = nil
@@ -53,8 +54,8 @@ class AlbumDetailsViewController: UIViewController {
     
     func correctTitle() -> String{
         var result = album?.title.replacingOccurrences(of: " ", with: "+")
-        let correctedArtistName = currentArtist.name.replacingOccurrences(of: " ", with: "+")
-        result! += correctedArtistName
+        let correctedArtistName = artist?.name.replacingOccurrences(of: " ", with: "+")
+        result! += correctedArtistName ?? ""
         
         return result!
     }

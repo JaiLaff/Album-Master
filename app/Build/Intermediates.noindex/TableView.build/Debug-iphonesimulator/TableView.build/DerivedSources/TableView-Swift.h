@@ -311,6 +311,7 @@ SWIFT_CLASS("_TtC9TableView18QuizViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bt4;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified spinner;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)button1Pressed:(id _Nonnull)sender;
 - (IBAction)button2Pressed:(id _Nonnull)sender;
 - (IBAction)button3Pressed:(id _Nonnull)sender;

@@ -389,15 +389,15 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Kkh-jB-SMo">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlA-ED-kq1">
-                                <rect key="frame" x="140" y="409" width="134" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLy-ii-K6R">
                                 <rect key="frame" x="155" y="771" width="104" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlA-ED-kq1">
+                                <rect key="frame" x="114" y="409" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -435,7 +435,7 @@
                             <constraint firstItem="WD0-jO-JV9" firstAttribute="trailing" secondItem="gLu-0B-o1S" secondAttribute="trailingMargin" id="ieo-we-9vP"/>
                             <constraint firstItem="vc1-1j-v6L" firstAttribute="bottom" secondItem="RLy-ii-K6R" secondAttribute="bottom" constant="48" id="mPG-Do-mV4"/>
                             <constraint firstItem="4wY-K8-qay" firstAttribute="top" secondItem="Vr1-Nh-wB7" secondAttribute="bottom" constant="83" id="oRO-Cm-IQP"/>
-                            <constraint firstItem="DlA-ED-kq1" firstAttribute="leading" secondItem="vc1-1j-v6L" secondAttribute="leading" constant="140" id="pwk-8O-7cL"/>
+                            <constraint firstItem="DlA-ED-kq1" firstAttribute="leading" secondItem="vc1-1j-v6L" secondAttribute="leading" constant="114" id="pwk-8O-7cL"/>
                             <constraint firstItem="vc1-1j-v6L" firstAttribute="bottom" secondItem="Vm2-Ax-dkE" secondAttribute="bottom" constant="166" id="s9H-Hw-dQ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vc1-1j-v6L"/>

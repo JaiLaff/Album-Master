@@ -45,8 +45,14 @@ class QuizViewController: UIViewController {
 
         albumCount = coreController?.getTotalAlbumCount() ?? 0
         updateUI(isLoading: true, updateButtons: true)
-        loadQuestion(numberOfOptions: availableButtons(), callback: updateUI)
+        
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let options = availableButtons()
+        loadQuestion(numberOfOptions: options, callback: updateUI)
     }
     
     func availableButtons() -> Int {
@@ -55,6 +61,7 @@ class QuizViewController: UIViewController {
             print("Not Enough Albums for a Quiz")
             
             popViewController(errorTitle: "Not Enough Albums!", message: "Come back when you have saved 4 or more albums")
+            return 0
         }
         
         switch (albumCount) {
@@ -68,15 +75,23 @@ class QuizViewController: UIViewController {
     }
     
     func popViewController(errorTitle: String, message: String) {
+        spinner.stopAnimating()
+        
         let alert = UIAlertController(title: errorTitle, message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
             self.navigationController?.popViewController(animated: true)
             
         }))
+    
+        present(alert, animated: true, completion: nil)
     }
     
     func loadQuestion(numberOfOptions: Int, callback: (Int) -> Void) {
+        
+        if numberOfOptions < 2 {
+            popViewController(errorTitle: "Not Enough Albums", message: "You need at least 4 albums to continue the quiz!")
+        }
         var newQuestion = Question(trackName: nil, options: [], correctAlbum: nil)
         
         let targetTrack:(track: String, album: String) = coreController!.getRandomTrack()

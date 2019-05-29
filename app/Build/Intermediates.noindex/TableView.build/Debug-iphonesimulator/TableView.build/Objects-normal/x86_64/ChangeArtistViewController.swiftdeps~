@@ -23,7 +23,7 @@ depends-top-level:
 - "DataParser"
 - !private "DispatchQueue"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "UIActivityIndicatorView"
 - !private "UIAlertAction"
 - !private "UIAlertController"

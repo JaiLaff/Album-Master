@@ -184,14 +184,18 @@ class DataParser {
                 return (nil, nil)
             }
             
-            let firstArtist = results[0]
-            
-            if let firstArtistDict = firstArtist as? [String:Any],
-                let name = firstArtistDict["artistName"],
-                let id = firstArtistDict["artistId"] {
-                print("Artist Found: \(name)(\(id))")
+            if results.count > 0{
+                    let firstArtist = results[0]
+                
+                if let firstArtistDict = firstArtist as? [String:Any],
+                    let name = firstArtistDict["artistName"],
+                    let id = firstArtistDict["artistId"] {
+                    print("Artist Found: \(name)(\(id))")
 
-                return (name as? String, String(id as! Int))
+                    return (name as? String, String(id as! Int))
+                }
+            } else {
+                return (nil,nil)
             }
             
         } catch {
