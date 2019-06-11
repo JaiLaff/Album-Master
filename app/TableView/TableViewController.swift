@@ -33,6 +33,7 @@ class TableViewController: UITableViewController {
         } else {
             parser = DataParser()
             deleteButton.isHidden = true
+            currentArtist.albums.removeAll()
             parser?.begin(callback: checkAlbumCount)
         }
     }
@@ -72,15 +73,6 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = useSavedData == true ? memArtists[section].albums.count : currentArtist.albums.count
-        if count < 1 {
-//            let alert = UIAlertController(title: "No Albums Found", message: "Check your internet connection", preferredStyle: .alert)
-//            
-//            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-//                self.navigationController?.popViewController(animated: true)
-//            }))
-//            
-//            self.present(alert, animated: true)
-        }
         
         return count
     }
