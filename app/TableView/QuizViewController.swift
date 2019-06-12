@@ -43,6 +43,7 @@ class QuizViewController: UIViewController {
             popViewController(errorTitle: "Critical Error", message: "Core Data Couldn't Load")
         }
 
+        print("Beginning Quiz")
         albumCount = coreController?.getTotalAlbumCount() ?? 0
         
         //set ui to loading
@@ -62,6 +63,9 @@ class QuizViewController: UIViewController {
         }
         
         let numOfOptions = availableButtons()
+        
+        print("There are \(albumCount) albums saved, There will be \(numOfOptions) options")
+        
         loadQuestion(numberOfOptions: numOfOptions, callback: updateUI)
     }
     
@@ -90,11 +94,13 @@ class QuizViewController: UIViewController {
     }
     
     func loadQuestion(numberOfOptions: Int, callback: (Int) -> Void) {
+        print("Loading Next Question")
         
         if numberOfOptions < 2 {
             callback(0)
         }
         var newQuestion = Question(trackName: nil, options: [], correctAlbum: nil)
+        
         
         let targetTrack:(track: String, album: String) = coreController!.getRandomTrack()
         
@@ -113,29 +119,39 @@ class QuizViewController: UIViewController {
         newQuestion.options.shuffle()
         question = newQuestion
         
+        print("Question Generated")
+        print("Track: \(question!.trackName!)")
+        print("Answer: \(question!.correctAlbum!)")
+        let options = question!.options.compactMap{$0}
+        print("Options: \(options)")
+        
         callback(numberOfOptions)
     }
     
     func updateUI(isLoading: Bool, updateButtons: Bool) {
         // Only spinner & loading label are active
-    
+        
+        
         lblStreak.text = "Streak: \(streak)"
         lblQuestion.isHidden = isLoading
         lblTrackName.isHidden = isLoading
         
         if (updateButtons) {
+            print("Updating Buttons\nButtons to be hidden: \(isLoading)")
             bt1.isHidden = isLoading
             bt2.isHidden = isLoading
             bt3.isHidden = isLoading
             bt4.isHidden = isLoading
         }
+        
         lblIsCorrect.isHidden = isLoading
         lblStreak.isHidden = isLoading
         
         lblLoading.isHidden = !isLoading
         
         if isLoading{
-        spinner.startAnimating()
+            print("Loading...")
+            spinner.startAnimating()
         } else {
             spinner.stopAnimating()
         }
@@ -204,6 +220,7 @@ class QuizViewController: UIViewController {
     }
     
     func checkAnswer(guessed: Int){
+        print("Checking Answer")
         question?.options[guessed] == question?.correctAlbum ? correct() : incorrect()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // delay text field disappearing (1.0 seconds)
             self.lblIsCorrect.text = ""
@@ -214,12 +231,14 @@ class QuizViewController: UIViewController {
     func correct() {
         lblIsCorrect.text = correctString
         streak += 1
-        
+        print("Correct Guess, Streak now: \(streak)")
     }
     
     func incorrect() {
         lblIsCorrect.text = incorrectString
         streak = 0
+        print("Incorrect Guess, Streak Lost")
+
         // Ability to save score here if time to add
     }
     

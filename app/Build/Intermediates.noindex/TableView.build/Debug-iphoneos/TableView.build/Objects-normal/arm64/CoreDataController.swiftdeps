@@ -29,6 +29,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Track"
+- !private "UnicodeScalarType"
 - !private "currentArtist"
 - "memAlbum"
 - "memArtist"
@@ -119,7 +120,6 @@ depends-member:
 - ["9TableView18CoreDataControllerC", "convertCoreArtistToMemArtist"]
 - ["9TableView18CoreDataControllerC", "convertCoreTrackToMemTrack"]
 - !private ["9TableView18CoreDataControllerC", "currentArtist"]
-- ["9TableView18CoreDataControllerC", "deinit"]
 - ["9TableView18CoreDataControllerC", "deleteAll"]
 - ["9TableView18CoreDataControllerC", "findAlbum"]
 - ["9TableView18CoreDataControllerC", "findArtist"]

@@ -29,6 +29,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Track"
+- !private "UnicodeScalarType"
 - !private "currentArtist"
 - "memAlbum"
 - "memArtist"

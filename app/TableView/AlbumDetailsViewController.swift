@@ -72,6 +72,7 @@ class AlbumDetailsViewController: UIViewController {
     }
     
     func fetchWikiUrl(completion: @escaping (String?) -> Void){
+        print("Fetching Wikipedia Page Candidates")
         spinner.startAnimating()
         
         if (!isConnectedToNetwork){
@@ -102,7 +103,6 @@ class AlbumDetailsViewController: UIViewController {
                     print("error: " + error.localizedDescription)
                 } else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 {
                     // If we have a 200 status (OK) then continue
-                    print("response")
                     result = self.parseBestUrl(data: data)
                     completion(result)
                 }
@@ -116,27 +116,27 @@ class AlbumDetailsViewController: UIViewController {
     func parseBestUrl(data: Data) -> String? {
         var response:[String: Any]
         
+        
         do {
             response = try (JSONSerialization.jsonObject(with: data, options: []) as? [String:Any])!
             
-            print(response)
+            
+
             // Make sure we actually have results
             guard let query = response["query"] as? [String:Any],
             let pages = query["pages"] as? [String:Any] else {
                 print("wrong identifer")
                 return nil
             }
-            
-            print(pages)
+            print("Parsing best URL out of \(pages.count) Candidates")
             
             for page in pages.values {
                 if let pageData = page as? [String:Any] {
                     let index = pageData["index"] as? Int
                     
                     if index == 1 { //Best url has index 1
-                        print("success!")
                         let result = pageData["fullurl"] as? String
-                        print(result!)
+                        print("Best URL found: \(result!)")
                         return result
                     }
                     
@@ -168,6 +168,7 @@ class AlbumDetailsViewController: UIViewController {
         let coreController = CoreDataController(context: appDelegate.persistentContainer.viewContext)
         coreController.writeAlbum(album:album!)
         
+        print("Saving Tracks to Core Data")
         
         for t in (album?.tracks)! {
             coreController.writeTrack(album: album!, track: t)

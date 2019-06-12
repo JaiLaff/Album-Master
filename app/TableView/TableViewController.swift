@@ -58,16 +58,16 @@ class TableViewController: UITableViewController {
                 displayNoAlbumAlert(savedData: true)
                 print("No Albums count in Core Data")
             } else {
-                print ("There are \(String(describing: count)) albums in Core Data")
+                print ("There are \(count!) albums in Core Data")
             }
             
         } else {
             let count = currentArtist.albums.count
             if ( count == 0) {
                 displayNoAlbumAlert(savedData: false)
-                print("No Albums found in memory")
+                print("No Albums in memory")
             } else {
-                print("There are \(String(describing: count)) albums in memory")
+                print("There are \(count) albums in memory")
             }
             
         }
@@ -135,7 +135,12 @@ class TableViewController: UITableViewController {
             } else {
                 self.parser?.fetchTracks(collID: memArtists[indexPath.section].albums[indexPath.row].itunesID, callback: seguePrep)
             }
+        } else {
+            print("Loading Tracks from Memory")
+            seguePrep()
+
         }
+        
     }
     
     
@@ -183,8 +188,10 @@ class TableViewController: UITableViewController {
         
         if savedData{
             alert = UIAlertController(title: "No Albums Found", message: "Go and save some albums!", preferredStyle: .alert)
+            print("No Saved Albums")
         } else {
             alert = UIAlertController(title: "No Albums Found", message: "Select an Artist!", preferredStyle: .alert)
+            print("Artist Not Selected")
         }
 
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in

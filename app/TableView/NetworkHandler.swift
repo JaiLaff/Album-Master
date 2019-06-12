@@ -21,17 +21,18 @@ final class NetworkHandler {
     init() {
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
-                print("We're connected!")
+                print("Network Connection Found")
+                print("Using expensive path: \(path.isExpensive)")
                 isConnectedToNetwork = true
             } else {
-                print("No connection.")
+                print("Network Connection Lost")
                 
                 isConnectedToNetwork = false
             }
-            
-            print("Using expensive path: \(path.isExpensive)")
         }
         
+        print("Starting Network Handler...")
+
         monitor.start(queue: queue)
     }
     

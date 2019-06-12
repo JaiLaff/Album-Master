@@ -14,6 +14,7 @@ provides-dynamic-lookup:
 - "tfArtistName"
 - "viewDidLoad"
 depends-top-level:
+- !private "!"
 - !private "!="
 - !private "=="
 - !private "??"
@@ -24,7 +25,7 @@ depends-top-level:
 - "DataParser"
 - !private "DispatchQueue"
 - "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "UIActivityIndicatorView"
 - !private "UIAlertAction"
 - !private "UIAlertController"
@@ -33,6 +34,7 @@ depends-top-level:
 - "UIViewController"
 - !private "Void"
 - !private "currentArtist"
+- !private "isConnectedToNetwork"
 - !private "memArtist"
 - !private "memArtists"
 - !private "||"
@@ -63,6 +65,7 @@ depends-member:
 - !private ["s7CVarArgP", "foundArtistName"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isConnectedToNetwork"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "lblFoundArtistName"]
 - !private ["s7CVarArgP", "main"]
@@ -95,6 +98,7 @@ depends-member:
 - ["9TableView012ChangeArtistB10ControllerC", "foundArtistName"]
 - ["9TableView012ChangeArtistB10ControllerC", "goPressed"]
 - ["9TableView012ChangeArtistB10ControllerC", "init"]
+- !private ["9TableView012ChangeArtistB10ControllerC", "isConnectedToNetwork"]
 - ["9TableView012ChangeArtistB10ControllerC", "lblFoundArtistName"]
 - !private ["9TableView012ChangeArtistB10ControllerC", "memArtist"]
 - !private ["9TableView012ChangeArtistB10ControllerC", "memArtists"]
@@ -123,6 +127,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "foundArtistName"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isConnectedToNetwork"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "lblFoundArtistName"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
@@ -166,6 +171,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "foundArtistName"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isConnectedToNetwork"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "lblFoundArtistName"]
 - !private ["s23CustomStringConvertibleP", "main"]
@@ -223,6 +229,7 @@ depends-member:
 - !private ["SQ", "foundArtistName"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isConnectedToNetwork"]
 - !private ["SQ", "isHidden"]
 - !private ["SQ", "lblFoundArtistName"]
 - !private ["SQ", "main"]
@@ -269,6 +276,7 @@ depends-member:
 - !private ["SH", "foundArtistName"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "isConnectedToNetwork"]
 - !private ["SH", "isHidden"]
 - !private ["SH", "lblFoundArtistName"]
 - !private ["SH", "main"]
@@ -303,6 +311,7 @@ depends-member:
 - !private ["So8NSCodingP", "foundArtistName"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isConnectedToNetwork"]
 - !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "lblFoundArtistName"]
 - !private ["So8NSCodingP", "memArtist"]
@@ -331,6 +340,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "foundArtistName"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "isConnectedToNetwork"]
 - !private ["So26NSExtensionRequestHandlingP", "lblFoundArtistName"]
 - !private ["So26NSExtensionRequestHandlingP", "memArtist"]
 - !private ["So26NSExtensionRequestHandlingP", "memArtists"]
@@ -360,6 +370,7 @@ depends-member:
 - ["So8NSObjectC", "goPressed"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isConnectedToNetwork"]
 - !private ["So8NSObjectC", "isHidden"]
 - ["So8NSObjectC", "lblFoundArtistName"]
 - !private ["So8NSObjectC", "main"]
@@ -389,6 +400,7 @@ depends-member:
 - !private ["So8NSObjectP", "foundArtistName"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isConnectedToNetwork"]
 - !private ["So8NSObjectP", "isHidden"]
 - !private ["So8NSObjectP", "lblFoundArtistName"]
 - !private ["So8NSObjectP", "main"]
@@ -459,6 +471,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "foundArtistName"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isConnectedToNetwork"]
 - !private ["So21UIAppearanceContainerP", "isHidden"]
 - !private ["So21UIAppearanceContainerP", "lblFoundArtistName"]
 - !private ["So21UIAppearanceContainerP", "memArtist"]
@@ -486,6 +499,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "foundArtistName"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "isConnectedToNetwork"]
 - !private ["So18UIContentContainerP", "lblFoundArtistName"]
 - !private ["So18UIContentContainerP", "memArtist"]
 - !private ["So18UIContentContainerP", "memArtists"]
@@ -523,6 +537,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "foundArtistName"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isConnectedToNetwork"]
 - !private ["So18UIFocusEnvironmentP", "isHidden"]
 - !private ["So18UIFocusEnvironmentP", "lblFoundArtistName"]
 - !private ["So18UIFocusEnvironmentP", "memArtist"]
@@ -565,6 +580,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "foundArtistName"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isConnectedToNetwork"]
 - !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "lblFoundArtistName"]
 - !private ["So30UIPasteConfigurationSupportingP", "memArtist"]
@@ -598,6 +614,7 @@ depends-member:
 - ["So11UIResponderC", "goPressed"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isConnectedToNetwork"]
 - !private ["So11UIResponderC", "isHidden"]
 - ["So11UIResponderC", "lblFoundArtistName"]
 - !private ["So11UIResponderC", "memArtist"]
@@ -625,6 +642,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "foundArtistName"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isConnectedToNetwork"]
 - !private ["So30UIResponderStandardEditActionsP", "isHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "lblFoundArtistName"]
 - !private ["So30UIResponderStandardEditActionsP", "memArtist"]
@@ -654,6 +672,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "foundArtistName"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "isConnectedToNetwork"]
 - !private ["So16UIStateRestoringP", "lblFoundArtistName"]
 - !private ["So16UIStateRestoringP", "memArtist"]
 - !private ["So16UIStateRestoringP", "memArtists"]
@@ -688,6 +707,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "foundArtistName"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isConnectedToNetwork"]
 - !private ["So18UITraitEnvironmentP", "isHidden"]
 - !private ["So18UITraitEnvironmentP", "lblFoundArtistName"]
 - !private ["So18UITraitEnvironmentP", "memArtist"]
@@ -715,6 +735,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "foundArtistName"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isConnectedToNetwork"]
 - !private ["So23UIUserActivityRestoringP", "isHidden"]
 - !private ["So23UIUserActivityRestoringP", "lblFoundArtistName"]
 - !private ["So23UIUserActivityRestoringP", "memArtist"]
@@ -754,6 +775,7 @@ depends-member:
 - ["So16UIViewControllerC", "goPressed"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "isConnectedToNetwork"]
 - ["So16UIViewControllerC", "lblFoundArtistName"]
 - !private ["So16UIViewControllerC", "memArtist"]
 - !private ["So16UIViewControllerC", "memArtists"]
@@ -795,6 +817,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "foundArtistName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isConnectedToNetwork"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lblFoundArtistName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]

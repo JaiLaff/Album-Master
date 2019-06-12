@@ -36,7 +36,7 @@ class CoreDataController {
                 artist = result[0]
                 print("Artist found: \(String(describing: artist!.name))")
             } else {
-                print("Failed to find Artist from Core Data - Creating New Artist")
+                print("Failed to find Artist \"\(currentArtist.name)\" in Core Data - Creating New Artist Entity")
                 artist = nil
                 artist = Artist(context: context)
                 artist!.name = currentArtist.name
@@ -100,10 +100,10 @@ class CoreDataController {
         album?.addToTracks(newTrack)
         do {
             try context.save()
-            print("\(newTrack.title!) added to \(album!.title!)")
+            print("\"\(newTrack.title!)\" saved to \"\(album!.title!)\"")
 
         }catch {
-            print("Failed to save Track to Core Data - \(error)")
+            print("Failed to save Track \"\(newTrack.title ?? "")\" to Core Data - \(error)")
         }
     }
     
