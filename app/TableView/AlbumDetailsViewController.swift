@@ -17,6 +17,7 @@ class AlbumDetailsViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var usingCoreData:Bool? = nil
     
+    @IBOutlet weak var albumTitle: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var saveButton: UIButton!
@@ -25,7 +26,7 @@ class AlbumDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = album?.title ?? "Album Details"
+        albumTitle.text = album?.title ?? ""
         
         updateImage()
         updateTracklist()
@@ -37,6 +38,16 @@ class AlbumDetailsViewController: UIViewController {
     }
     
     func updateImage() {
+        if (!isConnectedToNetwork) {
+            let errorAlert = UIAlertController(title: "Failed to Load Image", message: "No Connection", preferredStyle: .alert)
+            
+            errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                return
+            }))
+            
+            self.present(errorAlert, animated: true, completion: nil)
+        }
+        
         if let url = URL(string: album?.imgUrl ?? ""){
             if let data = try? Data(contentsOf: url){ //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
     
@@ -62,6 +73,18 @@ class AlbumDetailsViewController: UIViewController {
     
     func fetchWikiUrl(completion: @escaping (String?) -> Void){
         spinner.startAnimating()
+        
+        if (!isConnectedToNetwork){
+            print("Cannot Call Wikipedia API - No connection")
+            let errorAlert = UIAlertController(title: "No Connection", message: "Cannot go to Wikipedia without any internet!", preferredStyle: .alert)
+            
+            errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                self.spinner.stopAnimating()
+                return
+            }))
+            
+            self.present(errorAlert, animated: true, completion: nil)
+        }
         var result: String?
         var dataTask: URLSessionDataTask?
         

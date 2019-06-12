@@ -1,0 +1,584 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MenuViewController"
+provides-nominal:
+- "9TableView04MenuB10ControllerC"
+provides-member:
+- ["9TableView04MenuB10ControllerC", ""]
+provides-dynamic-lookup:
+- "changeArtistPressed"
+- "itunesPressed"
+- "lblArtistName"
+- "prepare"
+- "quizPressed"
+- "savedPressed"
+- "viewDidAppear"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "MenuViewController"
+- "NetworkHandler"
+- !private "StringLiteralType"
+- !private "TableViewController"
+- "UILabel"
+- "UIStoryboardSegue"
+- "UIViewController"
+- !private "currentArtist"
+- !private "memArtists"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "removeAll"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "removeAll"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "removeAll"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "NetworkHandler"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "currentArtist"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "goToTable"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "lblArtistName"]
+- !private ["s7CVarArgP", "memArtists"]
+- !private ["s7CVarArgP", "networkHandler"]
+- !private ["s7CVarArgP", "performSegue"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "useSaved"]
+- !private ["s7CVarArgP", "useSavedData"]
+- !private ["s7CVarArgP", "viewDidAppear"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "removeAll"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "NetworkHandler"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "currentArtist"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "goToTable"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "lblArtistName"]
+- !private ["s28CustomDebugStringConvertibleP", "memArtists"]
+- !private ["s28CustomDebugStringConvertibleP", "networkHandler"]
+- !private ["s28CustomDebugStringConvertibleP", "performSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "useSaved"]
+- !private ["s28CustomDebugStringConvertibleP", "useSavedData"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidAppear"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "NetworkHandler"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "currentArtist"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "goToTable"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "lblArtistName"]
+- !private ["s23CustomStringConvertibleP", "memArtists"]
+- !private ["s23CustomStringConvertibleP", "networkHandler"]
+- !private ["s23CustomStringConvertibleP", "performSegue"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "useSaved"]
+- !private ["s23CustomStringConvertibleP", "useSavedData"]
+- !private ["s23CustomStringConvertibleP", "viewDidAppear"]
+- !private ["Se", "append"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "removeAll"]
+- !private ["Se", "text"]
+- !private ["SE", "append"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "removeAll"]
+- !private ["SE", "text"]
+- !private ["SQ", "NetworkHandler"]
+- ["SQ", ""]
+- !private ["SQ", "append"]
+- !private ["SQ", "currentArtist"]
+- !private ["SQ", "destination"]
+- !private ["SQ", "goToTable"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "lblArtistName"]
+- !private ["SQ", "memArtists"]
+- !private ["SQ", "networkHandler"]
+- !private ["SQ", "performSegue"]
+- !private ["SQ", "removeAll"]
+- !private ["SQ", "text"]
+- !private ["SQ", "useSaved"]
+- !private ["SQ", "useSavedData"]
+- !private ["SQ", "viewDidAppear"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "NetworkHandler"]
+- ["SH", ""]
+- !private ["SH", "append"]
+- !private ["SH", "currentArtist"]
+- !private ["SH", "destination"]
+- !private ["SH", "goToTable"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "lblArtistName"]
+- !private ["SH", "memArtists"]
+- !private ["SH", "networkHandler"]
+- !private ["SH", "performSegue"]
+- !private ["SH", "removeAll"]
+- !private ["SH", "text"]
+- !private ["SH", "useSaved"]
+- !private ["SH", "useSavedData"]
+- !private ["SH", "viewDidAppear"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["9TableView04MenuB10ControllerC", "Bool"]
+- ["9TableView04MenuB10ControllerC", "NetworkHandler"]
+- !private ["9TableView04MenuB10ControllerC", "TableViewController"]
+- ["9TableView04MenuB10ControllerC", "UILabel"]
+- ["9TableView04MenuB10ControllerC", "UIStoryboardSegue"]
+- ["9TableView04MenuB10ControllerC", "changeArtistPressed"]
+- !private ["9TableView04MenuB10ControllerC", "currentArtist"]
+- ["9TableView04MenuB10ControllerC", "goToTable"]
+- ["9TableView04MenuB10ControllerC", "init"]
+- ["9TableView04MenuB10ControllerC", "itunesPressed"]
+- ["9TableView04MenuB10ControllerC", "lblArtistName"]
+- !private ["9TableView04MenuB10ControllerC", "memArtists"]
+- ["9TableView04MenuB10ControllerC", "networkHandler"]
+- !private ["9TableView04MenuB10ControllerC", "performSegue"]
+- ["9TableView04MenuB10ControllerC", "prepare"]
+- ["9TableView04MenuB10ControllerC", "quizPressed"]
+- ["9TableView04MenuB10ControllerC", "savedPressed"]
+- ["9TableView04MenuB10ControllerC", "useSaved"]
+- ["9TableView04MenuB10ControllerC", "viewDidAppear"]
+- ["9TableView04MenuB10ControllerC", "viewDidLoad"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "removeAll"]
+- !private ["So8NSCodingP", "NetworkHandler"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "currentArtist"]
+- !private ["So8NSCodingP", "goToTable"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "lblArtistName"]
+- !private ["So8NSCodingP", "memArtists"]
+- !private ["So8NSCodingP", "networkHandler"]
+- !private ["So8NSCodingP", "performSegue"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "useSaved"]
+- !private ["So8NSCodingP", "useSavedData"]
+- !private ["So8NSCodingP", "viewDidAppear"]
+- !private ["So26NSExtensionRequestHandlingP", "NetworkHandler"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "currentArtist"]
+- !private ["So26NSExtensionRequestHandlingP", "goToTable"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "lblArtistName"]
+- !private ["So26NSExtensionRequestHandlingP", "memArtists"]
+- !private ["So26NSExtensionRequestHandlingP", "networkHandler"]
+- !private ["So26NSExtensionRequestHandlingP", "performSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "useSaved"]
+- !private ["So26NSExtensionRequestHandlingP", "useSavedData"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidAppear"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "NetworkHandler"]
+- !private ["So8NSObjectC", "TableViewController"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- ["So8NSObjectC", "changeArtistPressed"]
+- !private ["So8NSObjectC", "currentArtist"]
+- !private ["So8NSObjectC", "destination"]
+- ["So8NSObjectC", "goToTable"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "itunesPressed"]
+- ["So8NSObjectC", "lblArtistName"]
+- !private ["So8NSObjectC", "memArtists"]
+- ["So8NSObjectC", "networkHandler"]
+- !private ["So8NSObjectC", "performSegue"]
+- ["So8NSObjectC", "prepare"]
+- ["So8NSObjectC", "quizPressed"]
+- ["So8NSObjectC", "savedPressed"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "useSaved"]
+- !private ["So8NSObjectC", "useSavedData"]
+- ["So8NSObjectC", "viewDidAppear"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "NetworkHandler"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "currentArtist"]
+- !private ["So8NSObjectP", "destination"]
+- !private ["So8NSObjectP", "goToTable"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "lblArtistName"]
+- !private ["So8NSObjectP", "memArtists"]
+- !private ["So8NSObjectP", "networkHandler"]
+- !private ["So8NSObjectP", "performSegue"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "useSaved"]
+- !private ["So8NSObjectP", "useSavedData"]
+- !private ["So8NSObjectP", "viewDidAppear"]
+- !private ["9TableView14NetworkHandlerC", "init"]
+- !private ["Sq", "text"]
+- !private ["Sk", "append"]
+- !private ["Sk", "removeAll"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "removeAll"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "removeAll"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["9TableView0aB10ControllerC", "useSavedData"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "NetworkHandler"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "currentArtist"]
+- !private ["So21UIAppearanceContainerP", "goToTable"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "lblArtistName"]
+- !private ["So21UIAppearanceContainerP", "memArtists"]
+- !private ["So21UIAppearanceContainerP", "networkHandler"]
+- !private ["So21UIAppearanceContainerP", "performSegue"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "useSaved"]
+- !private ["So21UIAppearanceContainerP", "useSavedData"]
+- !private ["So21UIAppearanceContainerP", "viewDidAppear"]
+- !private ["So18UIContentContainerP", "NetworkHandler"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "currentArtist"]
+- !private ["So18UIContentContainerP", "goToTable"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "lblArtistName"]
+- !private ["So18UIContentContainerP", "memArtists"]
+- !private ["So18UIContentContainerP", "networkHandler"]
+- !private ["So18UIContentContainerP", "performSegue"]
+- !private ["So18UIContentContainerP", "useSaved"]
+- !private ["So18UIContentContainerP", "useSavedData"]
+- !private ["So18UIContentContainerP", "viewDidAppear"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "NetworkHandler"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "currentArtist"]
+- !private ["So18UIFocusEnvironmentP", "goToTable"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "lblArtistName"]
+- !private ["So18UIFocusEnvironmentP", "memArtists"]
+- !private ["So18UIFocusEnvironmentP", "networkHandler"]
+- !private ["So18UIFocusEnvironmentP", "performSegue"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "useSaved"]
+- !private ["So18UIFocusEnvironmentP", "useSavedData"]
+- !private ["So18UIFocusEnvironmentP", "viewDidAppear"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "NetworkHandler"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "currentArtist"]
+- !private ["So30UIPasteConfigurationSupportingP", "goToTable"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblArtistName"]
+- !private ["So30UIPasteConfigurationSupportingP", "memArtists"]
+- !private ["So30UIPasteConfigurationSupportingP", "networkHandler"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "useSaved"]
+- !private ["So30UIPasteConfigurationSupportingP", "useSavedData"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidAppear"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "NetworkHandler"]
+- !private ["So11UIResponderC", "TableViewController"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "changeArtistPressed"]
+- !private ["So11UIResponderC", "currentArtist"]
+- ["So11UIResponderC", "goToTable"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "itunesPressed"]
+- ["So11UIResponderC", "lblArtistName"]
+- !private ["So11UIResponderC", "memArtists"]
+- ["So11UIResponderC", "networkHandler"]
+- !private ["So11UIResponderC", "performSegue"]
+- ["So11UIResponderC", "prepare"]
+- ["So11UIResponderC", "quizPressed"]
+- ["So11UIResponderC", "savedPressed"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "useSaved"]
+- !private ["So11UIResponderC", "useSavedData"]
+- ["So11UIResponderC", "viewDidAppear"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "NetworkHandler"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "currentArtist"]
+- !private ["So30UIResponderStandardEditActionsP", "goToTable"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "lblArtistName"]
+- !private ["So30UIResponderStandardEditActionsP", "memArtists"]
+- !private ["So30UIResponderStandardEditActionsP", "networkHandler"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "useSaved"]
+- !private ["So30UIResponderStandardEditActionsP", "useSavedData"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidAppear"]
+- !private ["So20UIScrollViewDelegateP", "useSavedData"]
+- !private ["So16UIStateRestoringP", "NetworkHandler"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "currentArtist"]
+- !private ["So16UIStateRestoringP", "goToTable"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "lblArtistName"]
+- !private ["So16UIStateRestoringP", "memArtists"]
+- !private ["So16UIStateRestoringP", "networkHandler"]
+- !private ["So16UIStateRestoringP", "performSegue"]
+- !private ["So16UIStateRestoringP", "useSaved"]
+- !private ["So16UIStateRestoringP", "useSavedData"]
+- !private ["So16UIStateRestoringP", "viewDidAppear"]
+- !private ["So17UIStoryboardSegueC", "destination"]
+- !private ["So21UITableViewControllerC", "useSavedData"]
+- !private ["So21UITableViewDataSourceP", "useSavedData"]
+- !private ["So19UITableViewDelegateP", "useSavedData"]
+- !private ["So18UITraitEnvironmentP", "NetworkHandler"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "currentArtist"]
+- !private ["So18UITraitEnvironmentP", "goToTable"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "lblArtistName"]
+- !private ["So18UITraitEnvironmentP", "memArtists"]
+- !private ["So18UITraitEnvironmentP", "networkHandler"]
+- !private ["So18UITraitEnvironmentP", "performSegue"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "useSaved"]
+- !private ["So18UITraitEnvironmentP", "useSavedData"]
+- !private ["So18UITraitEnvironmentP", "viewDidAppear"]
+- !private ["So23UIUserActivityRestoringP", "NetworkHandler"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "currentArtist"]
+- !private ["So23UIUserActivityRestoringP", "goToTable"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "lblArtistName"]
+- !private ["So23UIUserActivityRestoringP", "memArtists"]
+- !private ["So23UIUserActivityRestoringP", "networkHandler"]
+- !private ["So23UIUserActivityRestoringP", "performSegue"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "useSaved"]
+- !private ["So23UIUserActivityRestoringP", "useSavedData"]
+- !private ["So23UIUserActivityRestoringP", "viewDidAppear"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "NetworkHandler"]
+- !private ["So16UIViewControllerC", "TableViewController"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "changeArtistPressed"]
+- !private ["So16UIViewControllerC", "currentArtist"]
+- ["So16UIViewControllerC", "goToTable"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "itunesPressed"]
+- ["So16UIViewControllerC", "lblArtistName"]
+- !private ["So16UIViewControllerC", "memArtists"]
+- ["So16UIViewControllerC", "networkHandler"]
+- !private ["So16UIViewControllerC", "performSegue"]
+- ["So16UIViewControllerC", "prepare"]
+- ["So16UIViewControllerC", "quizPressed"]
+- ["So16UIViewControllerC", "savedPressed"]
+- ["So16UIViewControllerC", "useSaved"]
+- !private ["So16UIViewControllerC", "useSavedData"]
+- ["So16UIViewControllerC", "viewDidAppear"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkHandler"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentArtist"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "goToTable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblArtistName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "memArtists"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "networkHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "useSaved"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "useSavedData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidAppear"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["9TableView9memArtistC", "name"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- "9TableView04MenuB10ControllerC"
+- !private "s10MirrorPathP"
+- !private "SM"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "9TableView14NetworkHandlerC"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "9TableView0aB10ControllerC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+- !private "9TableView9memArtistC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Network.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Network.framework/Headers/Network.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a4e56fd30f43bb545f46f831638540da"

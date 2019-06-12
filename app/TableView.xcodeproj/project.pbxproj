@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2900385222B0B5CD00A58A82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2900385122B0B5CC00A58A82 /* icon.png */; };
+		2900385422B0CC1300A58A82 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900385322B0CC1300A58A82 /* NetworkHandler.swift */; };
 		29093C2C2294358E0048E366 /* AlbumData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29093C2A2294358E0048E366 /* AlbumData.xcdatamodeld */; };
 		2966D55022891076002C47C2 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D54F22891076002C47C2 /* DataParser.swift */; };
 		299C1D3C22991A310009AC2B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299C1D3B22991A310009AC2B /* QuizViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2900385122B0B5CC00A58A82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Assets.xcassets/icon.png; sourceTree = "<group>"; };
+		2900385322B0CC1300A58A82 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		29093C2B2294358E0048E366 /* AlbumData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlbumData.xcdatamodel; sourceTree = "<group>"; };
 		2966D54F22891076002C47C2 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		299C1D3B22991A310009AC2B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				29BBB0862254C8E600DD4600 /* AlbumDetailsViewController.swift */,
 				29BBB0882254C8E600DD4600 /* Main.storyboard */,
 				29BBB0982254D42C00DD4600 /* Model.swift */,
+				2900385322B0CC1300A58A82 /* NetworkHandler.swift */,
 				29BBB0962254C99700DD4600 /* TableViewController.swift */,
 				29093C2A2294358E0048E366 /* AlbumData.xcdatamodeld */,
 				2966D54F22891076002C47C2 /* DataParser.swift */,
@@ -89,6 +94,7 @@
 				29BBB09A2254E8DB00DD4600 /* Media.xcassets */,
 				29BBB08D2254C8E700DD4600 /* LaunchScreen.storyboard */,
 				29BBB0902254C8E700DD4600 /* Info.plist */,
+				2900385122B0B5CC00A58A82 /* icon.png */,
 				29D8686A22959596007E815E /* customCell.swift */,
 			);
 			path = TableView;
@@ -153,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BBB08F2254C8E700DD4600 /* LaunchScreen.storyboard in Resources */,
+				2900385222B0B5CD00A58A82 /* icon.png in Resources */,
 				29BBB08C2254C8E700DD4600 /* Assets.xcassets in Resources */,
 				29BBB09B2254E8DB00DD4600 /* Media.xcassets in Resources */,
 				29BBB08A2254C8E600DD4600 /* Main.storyboard in Resources */,
@@ -177,6 +184,7 @@
 				29BBB0992254D42C00DD4600 /* Model.swift in Sources */,
 				29D7DE642297CF6F00910344 /* ChangeArtistViewController.swift in Sources */,
 				29D8686B22959596007E815E /* customCell.swift in Sources */,
+				2900385422B0CC1300A58A82 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

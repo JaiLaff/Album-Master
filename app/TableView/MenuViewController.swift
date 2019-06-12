@@ -8,17 +8,35 @@
 
 import Foundation
 import UIKit
+import Network
 
 
 class MenuViewController: UIViewController {
     
     var useSaved: Bool? = nil
     
+    var networkHandler: NetworkHandler? = nil
+    
+    
     @IBOutlet weak var lblArtistName: UILabel!
+    
+    override func viewDidLoad() {
+        networkHandler = NetworkHandler()
+    }
     
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(true)
         lblArtistName.text = currentArtist.name
+        
+        if (!isConnectedToNetwork) {
+            let errorAlert = UIAlertController(title: "No Network Connection Detected", message: "Many features are not available without a present network connection", preferredStyle: .alert)
+            
+            errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                return
+            }))
+            
+            self.present(errorAlert, animated: true, completion: nil)
+        }
     }
     
    

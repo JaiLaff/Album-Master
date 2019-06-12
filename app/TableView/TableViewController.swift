@@ -31,6 +31,18 @@ class TableViewController: UITableViewController {
             checkAlbumCount()
             
         } else {
+            
+            if (!isConnectedToNetwork) {
+                let errorAlert = UIAlertController(title: "Cannot Browse iTunes", message: "No Connection", preferredStyle: .alert)
+                
+                errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                    self.navigationController?.popViewController(animated: true)
+                    return
+                }))
+                
+                self.present(errorAlert, animated: true, completion: nil)
+            }
+            
             parser = DataParser()
             deleteButton.isHidden = true
             currentArtist.albums.removeAll()

@@ -44,6 +44,8 @@ class QuizViewController: UIViewController {
         }
 
         albumCount = coreController?.getTotalAlbumCount() ?? 0
+        
+        //set ui to loading
         updateUI(isLoading: true, updateButtons: true)
         
 
@@ -51,18 +53,19 @@ class QuizViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let options = availableButtons()
-        loadQuestion(numberOfOptions: options, callback: updateUI)
+        
+        // Error Checking
+        if albumCount < 4 {
+            print("Error - Not enough albums to conduct quiz")
+            popViewController(errorTitle: "Not Enough Albums", message: "Come back when you have 4 or more albums")
+            return
+        }
+        
+        let numOfOptions = availableButtons()
+        loadQuestion(numberOfOptions: numOfOptions, callback: updateUI)
     }
     
     func availableButtons() -> Int {
-        
-        if (albumCount < 4) {
-            print("Not Enough Albums for a Quiz")
-            
-            popViewController(errorTitle: "Not Enough Albums!", message: "Come back when you have saved 4 or more albums")
-            return 0
-        }
         
         switch (albumCount) {
             case 4:
@@ -75,22 +78,21 @@ class QuizViewController: UIViewController {
     }
     
     func popViewController(errorTitle: String, message: String) {
-        spinner.stopAnimating()
+        let errorAlert = UIAlertController(title: errorTitle, message: message, preferredStyle: .alert)
         
-        let alert = UIAlertController(title: errorTitle, message: message, preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+        errorAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
             self.navigationController?.popViewController(animated: true)
-            
+            print("Popping View Controller!")
         }))
-    
-        present(alert, animated: true, completion: nil)
+        
+        self.present(errorAlert, animated: true, completion: nil)
+        
     }
     
     func loadQuestion(numberOfOptions: Int, callback: (Int) -> Void) {
         
         if numberOfOptions < 2 {
-            popViewController(errorTitle: "Not Enough Albums", message: "You need at least 4 albums to continue the quiz!")
+            callback(0)
         }
         var newQuestion = Question(trackName: nil, options: [], correctAlbum: nil)
         
@@ -120,6 +122,7 @@ class QuizViewController: UIViewController {
         lblStreak.text = "Streak: \(streak)"
         lblQuestion.isHidden = isLoading
         lblTrackName.isHidden = isLoading
+        
         if (updateButtons) {
             bt1.isHidden = isLoading
             bt2.isHidden = isLoading
@@ -146,6 +149,7 @@ class QuizViewController: UIViewController {
                 bt2.isHidden = true
                 bt3.isHidden = true
                 bt4.isHidden = true
+                break
             case 2:
                 bt1.setTitle(question?.options[0], for: .normal)
                 bt2.setTitle(question?.options[1], for: .normal)
@@ -153,6 +157,7 @@ class QuizViewController: UIViewController {
                 bt2.isHidden = false
                 bt3.isHidden = true
                 bt4.isHidden = true
+                break
             case 3:
                 bt1.setTitle(question?.options[0], for: .normal)
                 bt2.setTitle(question?.options[1], for: .normal)
@@ -161,6 +166,7 @@ class QuizViewController: UIViewController {
                 bt2.isHidden = false
                 bt3.isHidden = false
                 bt4.isHidden = true
+                break
             case 4:
                 bt1.setTitle(question?.options[0], for: .normal)
                 bt2.setTitle(question?.options[1], for: .normal)
@@ -170,7 +176,7 @@ class QuizViewController: UIViewController {
                 bt2.isHidden = false
                 bt3.isHidden = false
                 bt4.isHidden = false
-                break;
+                break
             default:
                 updateUI(isLoading: true, updateButtons: true)
                 return
@@ -199,12 +205,16 @@ class QuizViewController: UIViewController {
     
     func checkAnswer(guessed: Int){
         question?.options[guessed] == question?.correctAlbum ? correct() : incorrect()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // delay text field disappearing (1.0 seconds)
+            self.lblIsCorrect.text = ""
+        }
         loadQuestion(numberOfOptions: availableButtons(), callback: updateUI)
     }
     
     func correct() {
         lblIsCorrect.text = correctString
         streak += 1
+        
     }
     
     func incorrect() {
