@@ -1,6 +1,6 @@
 # Distinction Application - Album Master
 
-* Imported from GitHub Classroom *
+*Imported from GitHub Classroom*
 
 Using the iTunes Search API become a master at Music Album knowledge.
 
