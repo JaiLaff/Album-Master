@@ -33,7 +33,7 @@ Navigation UI Map
 
 #### Class Diagrams
 
-Every class used to create Trackie. Most overridden system methods ignored
+Every class used. Most overridden system methods ignored
 
 ![Album Master Class Diagrams](doc/AlbumMasterClassDiagram.jpg)
 
